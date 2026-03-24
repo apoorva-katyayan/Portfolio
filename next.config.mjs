@@ -4,6 +4,12 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
+  // Provide an explicit (empty) turbopack config so Next.js won't error
+  // when a custom webpack config is present. This mirrors the Next.js
+  // suggestion: `turbopack: {}` to silence the "using Turbopack with a
+  // webpack config and no turbopack config" error on Next 16+.
+  turbopack: {},
+
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
