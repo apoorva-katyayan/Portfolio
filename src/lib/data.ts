@@ -44,16 +44,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Boardify - Online Notice Board",
-    description: "A full-scale web-based notice management platform for administrators to post, update, categorize and organize institutional notices.",
-    tags: ["HTML", "Tailwind CSS", "PHP", "MySQL"],
+    title: "EchoRead — RSS Reader (Template)",
+    description: "Template project: unified RSS reader with tagging and offline reading support.",
+    tags: ["HTML", "Tailwind CSS", "JavaScript"],
+    imageUrl: "/images/memoji-computer.png",
+  },
+  {
+    title: "AirIndex — Air Quality Dashboard (Template)",
+    description: "Template project: visualized AQI data across regions with historical trends.",
+    tags: ["React", "API", "Charts"],
     imageUrl: "/images/DashboardImage.png",
   },
   {
-    title: "ScheduleIt - CPU Scheduling Simulator",
-    description: "A simulator demonstrating multiple CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin) with performance metrics and visual output.",
-    tags: ["JavaScript", "HTML", "Tailwind CSS"],
+    title: "TrafficAI — Traffic Prediction Demo (Template)",
+    description: "Template project: short-term traffic forecasting with interactive visualizations.",
+    tags: ["Python", "ML", "Visualization"],
     imageUrl: "/images/secureFileImage.png",
+  },
+  {
+    title: "CrimeMap — Incident Heatmap (Template)",
+    description: "Template project: mapped anonymized incident reports with region filters.",
+    tags: ["Maps", "DataViz"],
+    imageUrl: "/images/memoji-boy-computer.png",
   },
 ] as const;
 
