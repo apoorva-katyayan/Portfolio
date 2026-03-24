@@ -1,63 +1,38 @@
 import DashboardImage from "@/assets/images/DashboardImage.png";
 import secureFileImage from "@/assets/images/secureFileImage.png";
-import MemojiComputer from "@/assets/images/memoji-computer.png";
-import MemojiBoyComputer from "@/assets/images/memoji-boy-computer.png";
+import echoReadImage from "@/assets/images/echoReadImage.png";
+import airIndexImage from "@/assets/images/airIndexImage.png";
+import aiTrafficImage from "@/assets/images/aiTrafficImage.png";
+import yourCrimeDashboardImage from "@/assets/images/yourCrimeDashboardImage.png";
 import Image from "next/image";
 import GrainImage from "@/assets/images/grain.jpg";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
-// Template projects (non-personal). These replace personal project entries so
-// the Projects section shows neutral/sample items. Replace images or links
-// later if you want specific template assets.
-const templateProjects = [
+const portfolioProjects = [
   {
-    company: "EchoRead",
-    year: "2023",
-    title: "EchoRead — RSS & Article Reader",
+    company: "Boardify - Online Notice Board",
+    year: "May 2025",
+    title: "Boardify — Notice Management Platform",
     results: [
-      { title: "Unified RSS reader with tagging and offline reading support." },
-      { title: "Clean, responsive UI with keyboard navigation and dark mode." },
-      { title: "Export and import reading lists for portability." },
+      { title: "Developed a full-scale web-based notice management platform for administrators to post, update, and organize notices." },
+      { title: "Implemented real-time notice updates using backend logic and improved accessibility for 300+ users." },
+      { title: "Built clean UI using HTML, Tailwind CSS and PHP; integrated MySQL for persistence." },
     ],
-    link: "#",
-    image: MemojiComputer,
-  },
-  {
-    company: "AirIndex",
-    year: "2022",
-    title: "AirIndex — Air Quality Dashboard",
-    results: [
-      { title: "Visualized AQI data across regions with historical trends." },
-      { title: "Provided health guidance and automated alerts for sensitive users." },
-      { title: "Lightweight, mobile-first implementation for fast access." },
-    ],
-    link: "#",
+    link: "https://github.com/apoorva-katyayan/boardify",
     image: DashboardImage,
   },
   {
-    company: "TrafficAI",
-    year: "2024",
-    title: "TrafficAI — Traffic Prediction Demo",
+    company: "ScheduleIt - CPU Scheduling Simulator",
+    year: "January 2025",
+    title: "ScheduleIt — CPU Scheduling Simulator",
     results: [
-      { title: "Demonstrated short-term traffic forecasting using simple ML models." },
-      { title: "Interactive visualizations to compare predicted vs real traffic." },
-      { title: "Designed with performance and small dataset constraints in mind." },
+      { title: "Built a simulator demonstrating FCFS, SJF, Priority, and Round Robin algorithms with reporting for waiting time and turnaround time." },
+      { title: "Applied algorithmic logic to calculate key performance metrics and validate results against standard CPU scheduling models." },
+      { title: "Provided clear visual output and comparisons to help learners understand scheduling tradeoffs." },
     ],
-    link: "#",
+    link: "https://github.com/apoorva-katyayan/scheduleit",
     image: secureFileImage,
-  },
-  {
-    company: "CrimeMap",
-    year: "2021",
-    title: "CrimeMap — Incident Heatmap",
-    results: [
-      { title: "Mapped anonymized incident reports and allowed region filters." },
-      { title: "Exportable reports for community stakeholders." },
-      { title: "Accessible color palette and clear legends for readability." },
-    ],
-    link: "#",
-    image: MemojiBoyComputer,
   },
 ];
 
@@ -78,7 +53,7 @@ export const Projects = () => {
             See how I transformed concepts to engaging digital experiences.
           </p>
           <div className="flex flex-col gap-20 md:mt-20 mt-10">
-            {templateProjects.map((project, index) => (
+            {portfolioProjects.map((project, index) => (
               <div
                 key={`${project.title}-${project.year}`}
                 style={{
